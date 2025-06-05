@@ -1,10 +1,11 @@
-*EyeLink: Patient-CareProvider Communication via Real-time Eye-Tracking*
-Project Overview
+**EyeLink: Patient-CareProvider Communication via Real-time Eye-Tracking**
+
+**Project Overview**
 The EyeGazeApp is a revolutionary system designed to enhance patient care and communication for individuals with severe disabilities (e.g., quadriplegia, unable to speak), by leveraging real-time eye-tracking technology. This project enables patients to communicate their needs or "call" for assistance through their eye movements, which are captured by a desktop application and processed by a backend service for dynamic nurse assignment.
 
 The core idea is to use eye-gaze data from these patients to provide a direct, non-verbal method of signaling needs, optimizing workflows, and ensuring prompt nurse attention when required.
 
-Components
+**Components**
 1. Desktop Application (EyeGazeApp Folder)
 This is the client-side application responsible for capturing and processing real-time eye-tracking data from the patient.
 
@@ -75,4 +76,3 @@ The Backend Service processes the incoming eye-gaze data, interpreting the patie
 
 If an assignment or notification is triggered, the backend updates its internal state and immediately pushes this information (e.g., 'Patient X needs assistance,' 'Patient Y called for water') via Firebase to the relevant nurse's Flutter mobile application, ensuring real-time awareness.
 
-Getting Started
