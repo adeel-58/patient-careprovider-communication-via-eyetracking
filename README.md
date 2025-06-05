@@ -1,4 +1,4 @@
-EyeLink: Patient-CareProvider Communication via Real-time Eye-Tracking
+*EyeLink: Patient-CareProvider Communication via Real-time Eye-Tracking*
 Project Overview
 The EyeGazeApp is a revolutionary system designed to enhance patient care and communication for individuals with severe disabilities (e.g., quadriplegia, unable to speak), by leveraging real-time eye-tracking technology. This project enables patients to communicate their needs or "call" for assistance through their eye movements, which are captured by a desktop application and processed by a backend service for dynamic nurse assignment.
 
@@ -8,7 +8,7 @@ Components
 1. Desktop Application (EyeGazeApp Folder)
 This is the client-side application responsible for capturing and processing real-time eye-tracking data from the patient.
 
-Technology: (Python,Dlib,shape_predictor_68_face_landmarks)
+Technology: Python, Dlib, shape_predictor_68_face_landmarks
 
 Functionality:
 
@@ -18,11 +18,10 @@ Data Processing: Processes raw eye-gaze data, potentially filtering noise, calcu
 
 Data Transmission: Securely sends processed eye-gaze data to the backend service for analysis and nurse assignment. The transmission is continuous and real-time.
 
-
 2. Backend Service (Backend Folder)
 This is the central hub that receives eye-tracking data from the desktop application, applies business logic for nurse assignment, and manages patient and nurse information.
 
-Technology: ( Python/Flask/Django)
+Technology: Python/Flask/Django
 
 Functionality:
 
@@ -36,9 +35,7 @@ Patient Needs: Dynamically adjusting assignments based on real-time assessment o
 
 Nurse Availability/Workload: Integrating with a nurse scheduling or availability system.
 
-
-
-Database Integration: (Sqlite3) to store:
+Database Integration: Sqlite3 to store:
 
 Nurse profiles and availability.
 
@@ -65,8 +62,6 @@ Notification Display: Clearly displays incoming patient requests, including pati
 
 Assignment Management: Allows nurses to acknowledge, accept, or update the status of assignments.
 
-
-
 User Interface: Intuitive and easy-to-use interface designed for quick access to critical patient information and actions in a healthcare environment.
 
 How It Works
@@ -79,3 +74,5 @@ This real-time eye-gaze data is streamed to the Backend Service.
 The Backend Service processes the incoming eye-gaze data, interpreting the patient's signals or 'calls.' Based on pre-defined logic, it determines the appropriate nurse to assign or notify.
 
 If an assignment or notification is triggered, the backend updates its internal state and immediately pushes this information (e.g., 'Patient X needs assistance,' 'Patient Y called for water') via Firebase to the relevant nurse's Flutter mobile application, ensuring real-time awareness.
+
+Getting Started
